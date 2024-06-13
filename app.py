@@ -19,10 +19,10 @@ imdb = datasets.imdb
 import gdown
 import os.path
 
-file_id1 = "1Nq6t4tYDTnBSbkez-1QhEr2qLQnYdB0T"  
+file_id1 = "1kyDq7it1smx2odKN4M5DyHyX76kwLuF7"
 if not os.path.isfile('imdb.h5'):
     gdown.download(f"https://drive.google.com/uc?id={file_id1}", 'imdb.h5')
-file_id2 = "1LR5qkDVvFj_vkQyAydUbLkd3w9H3P2Tq"  
+file_id2 = "1YXtPj1bbUuA5qxyBFac7XDSLukv7jkdc"  
 if not os.path.isfile('emotions.keras'):
     gdown.download(f"https://drive.google.com/uc?id={file_id2}", 'emotions.keras')
 nltk.download('stopwords')
